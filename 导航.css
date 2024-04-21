@@ -1,0 +1,235 @@
+/*导航栏主体*/
+    ul {
+        list-style: none;
+    }
+    .daohang {
+        height: 60px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding-left: 46px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .daohang ul {
+        float: left; 
+    }
+    .daohang ul li {
+        float: right;
+        line-height: 60px;
+    }
+
+/* 一级菜单 */
+    .daohang ul li a {
+        padding: 0 20px;
+        font-size: 16px;
+        font-weight: 600;
+        color:#4e4d4d;
+        border-right: 1px solid #d2d2d2;
+        text-decoration: none;
+    }
+    .shouye{
+        border-left: 1px solid #d2d2d2;
+    }
+
+    .daohang ul li a:hover{
+        background-color: rgb(255, 255, 255,0);
+        color: rgb(120, 154, 195);
+    } 
+
+/* 二级菜单 */
+    .daohang ul li ul{
+        position: absolute;
+        height: 53px;
+        border-radius: 4px;
+        border: 1px solid rgb(120, 154, 195,0.5);
+        background-color: rgb(255, 255, 255,0.9);
+        display: none;
+    }
+
+    .daohang ul li ul li {
+        float:left;
+        line-height: 40px;
+        margin: 5px;
+    }
+
+    .daohang ul li ul li a{
+        padding: 0 20px;
+        font-size: 14px;
+        font-weight: 600;
+        border: 0;
+        color:#4e4d4d;
+    }
+
+    .daohang ul li:hover ul {
+        display:block;
+    }
+
+    .daohang ul li ul li:hover{
+        background-color: rgb(120, 154, 195,0.5);
+        border-radius: 4px;
+    }
+
+    .daohang ul li ul li a:hover{
+        color: #4e4d4d;
+    }
+
+/* 开头图标设置 */
+    .daohang img{
+        vertical-align: middle;
+    }
+
+    .mingzi{
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 700;
+        color: rgb(120, 154, 195);
+        margin-right: 368px;
+    }
+
+/*一级菜单图标设置*/
+    .shouye::before {
+        content: '';
+        display: inline-block; 
+        height: 22px;
+        width: 22px;
+        background: url(./图标/首页.png);
+        vertical-align: middle;
+        background-size: contain;
+    }
+    .wenzhang::before {
+        content: '';
+        display: inline-block; 
+        height: 22px;
+        width: 22px;
+        background: url(./图标/文章.png);
+        vertical-align: middle;
+        background-size: contain;
+    } 
+    .wenzhang::after {
+        content: '';
+        display: inline-block; 
+        height: 18px;
+        width: 18px;
+        background: url(./图标/下拉.png);
+        vertical-align: middle;
+        background-size: contain;
+        margin-right: 2px;
+    }
+    .dongtai::before {
+        content: '';
+        display: inline-block; 
+        height: 22px;
+        width: 22px;
+        background: url(./图标/动态.png);
+        vertical-align: middle;
+        background-size: contain;
+    } 
+    .shejiao::before {
+        content: '';
+        display: inline-block; 
+        height: 22px;
+        width: 22px;
+        background: url(./图标/社交.png);
+        vertical-align: middle;
+        background-size: contain;
+        margin-right: 3px;
+    } 
+    .shejiao::after {
+        content: '';
+        display: inline-block; 
+        height: 18px;
+        width: 18px;
+        background: url(./图标/下拉.png);
+        vertical-align: middle;
+        background-size: contain
+    }
+    .geren::before {
+        content: '';
+        display: inline-block; 
+        height: 22px;
+        width: 22px;
+        background: url(./图标/关于我.png);
+        vertical-align: middle;
+        background-size: contain;
+    }
+
+/* 二级菜单图标设置 */
+    .guidang::before {
+        content: '';
+        display: inline-block; 
+        height: 15px;
+        width: 15px;
+        background: url(./图标/归档.png);
+        vertical-align: middle;
+        background-size: contain;
+        margin-right: 2px;
+    }
+    .biaoqian::before {
+        content: '';
+        display: inline-block; 
+        height: 15px;
+        width: 15px;
+        background: url(./图标/标签.png);
+        vertical-align: middle;
+        background-size: contain;
+        margin-right: 2px;
+    }
+    .fenlei::before {
+        content: '';
+        display: inline-block; 
+        height: 15px;
+        width: 15px;
+        background: url(./图标/分类.png);
+        vertical-align: middle;
+        background-size: contain;
+        margin-right: 2px;
+    }
+    .liuyan::before {
+        content: '';
+        display: inline-block; 
+        height: 15px;
+        width: 15px;
+        background: url(./图标/留言.png);
+        vertical-align: middle;
+        background-size: contain;
+        margin-right: 2px;
+    }
+    .youren::before {
+        content: '';
+        display: inline-block; 
+        height: 15px;
+        width: 15px;
+        background: url(./图标/友人.png);
+        vertical-align: middle;
+        background-size: contain;
+        margin-right: 2px;
+    }
+
+/* 搜索 */
+    .search{
+        position: relative;
+        float: right;
+        height: 60px;
+        width: 250px;
+        margin-right: 49px;
+        border-left: 1px solid #d2d2d2;
+    }
+    .search input{
+        position: absolute;
+        left: 14px;
+        top: 50%;
+        transform: translate(0,-50%);
+        height: 40px;
+        width: 200px;
+        font-size: 18px;
+        background: rgb(255, 255, 255,0);
+        border: none;
+        outline: none;
+    }
+    .search img{
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translate(0,-50%);
+        vertical-align: middle;
+    }

@@ -1,0 +1,74 @@
+/* 主题框架 */
+.grzhuti{
+    width: 80%;
+    height: 100%;
+    margin: 80px auto 0px;
+    background: rgb(255, 255, 255,0.8);
+    border-radius: 14px;
+    padding: 30px;
+}
+
+/* 标题设置 */
+.grzhuti h2{
+    line-height: 50px;
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 14px;
+    color: #1f2d3d;
+    border-bottom: 1px solid rgba(182, 182, 182, 0.8);
+}
+
+/* 本站简介 */
+.benzjj h2::after{
+    content: '';
+    display: inline-block; 
+    height: 40px;
+    width: 40px;
+    background: url(./图标/圣诞树.png);
+    vertical-align: middle;
+    background-size: contain;
+}
+.benzjj p{
+    line-height: 40px;
+    font-size: 20px;
+    color: rgb(0, 0, 0,0.9);
+}
+
+/* 博主简介 */
+    .grzhuti li{
+        padding-left: 10px;
+        line-height: 40px;
+        font-size: 20px;
+        color: rgb(0, 0, 0,0.9);
+    }
+
+    /* 背景颜色 */
+        .li1color{
+            background-color: rgb(201, 215, 226,0.7);
+        }
+        .li2color{
+            background-color: rgb(247, 222, 215,0.7);
+        }
+
+    /* 边框边角 */
+        .grzhuti li:first-child{
+            border-radius: 14px 14px 0 0;
+        }
+        .grzhuti li:last-child{
+            border-radius: 0 0 14px 14px;
+        }
+
+    /* 图标设置 */
+    .bozjj h2::after{
+        content: '';
+        display: inline-block; 
+        height: 40px;
+        width: 40px;
+        background: url(./图标/雪人.png);
+        vertical-align: middle;
+        background-size: contain;
+    }
+    .grzhuti li img{
+        vertical-align: middle;
+    }

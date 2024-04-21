@@ -1,0 +1,623 @@
+/* 入站显示 */
+    .ruzhan{
+        position: relative;
+    }
+    .ruzhan img{
+        width: 100%;
+    }
+    .mingcheng{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .mingcheng p{
+        font-size: 60px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 2px gray;
+    }   
+
+/* 首页主体 */
+.content{
+    width: 1430px;
+    height: 100%;
+    margin: 105px auto 0px;
+}
+
+/* 左边栏 */
+    .zuo{
+        float: left;
+        width: 250px;
+        margin-right: 15px;
+        border: 2px solid #d2d2d2;
+        background: rgb(255, 255, 255,0.7);
+        border-radius: 14px;
+    }
+
+    /* 头像 */
+    .touxiang{
+        border-radius: 14px 14px 0 0;
+    }
+
+    /* 姓名 */
+    .xingming{
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* 签名 */
+    .qianming{
+        text-align: center;
+        color: rgb(120, 154, 195);
+        font-weight: 600;
+        margin: 15px 0;
+    }
+
+    /* 各平台账号 */
+        .zhanghao{
+            height: 49px;
+            border-top: 1px solid #e4e4e4;
+        }
+        .zhanghao ul{
+            margin: 10px auto;
+        }
+        .zhanghao li {
+            float: left;
+        }
+        .zhanghao a{
+            padding: 0 9px;
+        }
+
+    /* 爱好 */
+        .aihao{
+            border-top: 1px solid #e4e4e4;
+            padding: 0px 14px;
+        }
+        .aihao span{
+            font-size: 13px;
+            line-height: 50px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .aihao span img{
+            vertical-align: middle;
+        }
+        .xiala{
+            float: right;
+            width: 18px;
+            height: 18px;
+            margin: 15px 0px;
+        }
+        .aihaoxiangqing{
+            font-size: 13px;
+            padding-bottom: 14px;
+            display: none;
+        }
+        .aihao:hover span{
+            color: rgb(120, 154, 195);
+        }
+        .aihao:hover .aihaoxiangqing{
+            display: block;
+        }
+
+/* 右边栏 */
+    .you{
+        float: right;
+        width: 250px;
+        height: 700px;
+        margin-left: 15px;
+        background: rgb(255, 255, 255,0);
+        border-radius: 14px;
+    }
+    /* 分类栏 */
+        .youfenlei{
+            width: 250px;
+            border-radius: 14px;
+            border: 2px solid #d2d2d2;
+            background: rgba(255, 255, 255, 0.8);
+        }
+        .youfenlei div{
+            padding: 20px 20px 0px 16px;
+            height: 64px;
+        }
+        .youfenlei div p{
+            line-height: 50px;
+            font-size: 25px;
+            font-weight: 600;
+            padding-left: 5px;
+        }
+        .youfenlei ul{
+            padding: 10px 20px 20px 20px;
+        }
+        .youfenlei li{
+            line-height: 40px;
+            font-size: 18px;
+        }
+        .youfenlei li a{
+            color: black;
+        }
+        /* 图标设置 */
+            .youfenlei div p::before {
+                content: '';
+                display: inline-block; 
+                height: 27px;
+                width: 27px;
+                background: url(./图标/分类2.png);
+                vertical-align: middle;
+                background-size: contain;
+                margin-right: 5px;
+            }
+            .biancheng::before {
+                content: '';
+                display: inline-block; 
+                height: 28px;
+                width: 28px;
+                background: url(./图标/编程.png);
+                vertical-align: middle;
+                background-size: contain;
+                margin-right: 4px;
+            }
+            .qita::before {
+                content: '';
+                display: inline-block; 
+                height: 28px;
+                width: 28px;
+                background: url(./图标/学习.png);
+                vertical-align: middle;
+                background-size: contain;
+                margin-right: 4px;
+            }
+            .lvyou::before {
+                content: '';
+                display: inline-block; 
+                height: 28px;
+                width: 28px;
+                background: url(./图标/旅游.png);
+                vertical-align: middle;
+                background-size: contain;
+                margin-right: 4px;
+            }
+            .meishi::before {
+                content: '';
+                display: inline-block; 
+                height: 28px;
+                width: 28px;
+                background: url(./图标/美食.png);
+                vertical-align: middle;
+                background-size: contain;
+                margin-right: 4px;
+            }
+            .zatan::before {
+                content: '';
+                display: inline-block; 
+                height: 28px;
+                width: 28px;
+                background: url(./图标/音乐.png);
+                vertical-align: middle;
+                background-size: contain;
+                margin-right: 4px;
+            }
+        /* 文章数量 */
+            .biancheng::after {
+                content: '1';
+                font-size: 18px;
+                display: inline-block; 
+                vertical-align: middle;
+                margin-left: 99px;
+            }
+            .qita::after {
+                content: '1';
+                font-size: 18px;
+                display: inline-block; 
+                vertical-align: middle;
+                margin-left: 99px;
+            }
+            .lvyou::after {
+                content: '1';
+                font-size: 18px;
+                display: inline-block; 
+                vertical-align: middle;
+                margin-left: 99px;
+            }
+            .meishi::after {
+                content: '1';
+                font-size: 18px;
+                display: inline-block; 
+                vertical-align: middle;
+                margin-left: 99px;
+            }
+            .zatan::after {
+                content: '1';
+                font-size: 18px;
+                display: inline-block; 
+                vertical-align: middle;
+                margin-left: 99px;
+            }
+        /* 点击设置 */
+            .youfenlei li:hover{
+                border-radius: 8px;
+                background: rgb(120, 154, 195,0.7);
+                color: rgba(255, 255, 255);
+            }
+            .youfenlei li:hover a{
+                color: rgba(255, 255, 255);
+            }
+
+    /* 标签栏 */
+        .youbiaoqian{
+            width: 250px;
+            border-radius: 14px;
+            border: 2px solid #d2d2d2;
+            background: rgba(255, 255, 255, 0.8);
+            margin-top: 20px;
+        }
+        .label{
+            padding: 20px 20px 0 20px;
+            height: 64px;
+        }
+        .label p{
+            line-height: 50px;
+            font-size: 25px;
+            font-weight: 600;
+            padding-left: 5px;
+        }
+        .xiangxibiaoqian{
+            padding: 10px 20px 20px 20px;
+            line-height: 40px;
+            font-size: 25px;
+            font-weight: 600;
+        }
+        .xiangxibiaoqian a{
+            display: inline-block;
+            line-height: 40px;
+            padding-right: 4px;
+        }
+        /* 标签字体 */
+            .cyy{
+                color: rgb(108, 205, 210);
+            }
+            .ccc{
+                color: rgb(69, 200, 244);
+            }
+            .html{
+                color: rgb(56, 139, 240);
+            }
+            .css{
+                color: rgb(120, 122, 248);
+            }
+            .sjk{
+                color: rgb(213, 136, 103);
+            }
+            .ry{
+                color: rgb(221, 106, 93);
+            }
+            .sy{
+                color: rgb(135, 107, 120);
+            }
+            .ms{
+                color: rgb(145, 196, 154);
+            }
+            .gqp{
+                color: rgb(178, 172, 209);
+            }
+            .jtp{
+                color: rgb(118, 118, 159);
+            }
+            .ys{
+                color: rgb(161, 192, 199);
+            }
+            .yys{
+                color: rgb(145, 194, 180);
+            }
+        /* 图标设置 */
+            .youbiaoqian div p::before {
+                content: '';
+                display: inline-block; 
+                height: 35px;
+                width: 34px;
+                background: url(./图标/标签1.png);
+                vertical-align: middle;
+                background-size: contain;
+                margin-right: 2px;
+            }
+            .cssa::before {
+                content: '';
+                display: inline-block; 
+                height: 30px;
+                width: 30px;
+                background: url(./图标/css.png);
+                vertical-align: middle;
+                background-size: contain;
+                /* margin-right: 2px; */
+            }
+            .gqpa::before {
+                content: '';
+                display: inline-block; 
+                height: 35px;
+                width: 35px;
+                background: url(./图标/钢琴.png);
+                vertical-align: middle;
+                background-size: contain;
+            }
+            .jtpa::before {
+                content: '';
+                display: inline-block; 
+                height: 35px;
+                width: 35px;
+                background: url(./图标/吉他.png);
+                vertical-align: middle;
+                background-size: contain;
+            }
+            .ysa::before {
+                content: '';
+                display: inline-block; 
+                height: 33px;
+                width: 33px;
+                background: url(./图标/原神.png);
+                vertical-align: middle;
+                background-size: contain;
+            }
+            .yysa::before {
+                content: '';
+                display: inline-block; 
+                height: 40px;
+                width: 40px;
+                background: url(./图标/阴阳师.png);
+                vertical-align: middle;
+                background-size: contain;
+            }
+        /* 点击设置 */
+        .xiangxibiaoqian a:hover{
+            border-radius: 8px;
+            background: rgb(120, 154, 195,0.7);
+            color: rgba(255, 255, 255);
+        }
+
+    /* 归档栏 */
+        .youguidang{
+            width: 250px;
+            border-radius: 14px;
+            border: 2px solid #d2d2d2;
+            background: rgba(255, 255, 255, 0.8);
+            margin-top: 20px;
+        }
+        .youguidang div{
+            padding: 20px 20px 0px 18px;
+            height: 64px;
+        }
+        .youguidang div p{
+            line-height: 50px;
+            font-size: 25px;
+            font-weight: 600;
+            padding-left: 6px;
+        }
+        .youguidang ul{
+            padding: 5px 20px 20px 20px;
+            line-height: 40px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .youguidang ul li{
+            padding: 0 5px;
+        }
+        .youguidang ul li a{
+            color: #000;
+        }
+        /* 图标设置 */
+            .youguidang p::before{
+                content: '';
+                display: inline-block; 
+                height: 27px;
+                width: 26px;
+                background: url(./图标/盒子.png);
+                vertical-align: middle;
+                background-size: contain;
+                margin-right: 4px;
+            }
+        /* 文章数量 */
+            .shiyiyue::after {
+                content: '1';
+                font-size: 18px;
+                display: inline-block; 
+                vertical-align: middle;
+                margin-left: 86px;
+            }
+            .shiyue::after {
+                content: '1';
+                font-size: 18px;
+                display: inline-block; 
+                vertical-align: middle;
+                margin-left: 104px;
+            }
+            .jiuyue::after {
+                content: '1';
+                font-size: 18px;
+                display: inline-block; 
+                vertical-align: middle;
+                margin-left: 104px;
+            }
+            .bayue::after {
+                content: '1';
+                font-size: 18px;
+                display: inline-block; 
+                vertical-align: middle;
+                margin-left: 104px;
+            }
+            .liuyue::after {
+                content: '1';
+                font-size: 18px;
+                display: inline-block; 
+                vertical-align: middle;
+                margin-left: 104px;
+            }
+        /* 点击设置 */
+            .youguidang li:hover{
+                border-radius: 8px;
+                background: rgb(120, 154, 195,0.7);
+                color: rgba(255, 255, 255);
+            }
+            .youguidang li:hover a{
+                color: rgba(255, 255, 255);
+            }
+
+/* 中心栏 */
+    .zhong {
+        width: 900px;
+        background-color: rgb(255, 255, 255,0);
+        display: inline-block;
+        border-radius: 14px;
+    }
+
+    /* 主文章 */
+        .article_1{
+            width: 100%;
+            height: 570px;
+            padding: 40px 60px;
+            background-color: rgb(255, 255, 255,0.8);
+            border-radius: 14px;
+            border: 1px solid #d4d4d5;
+        }
+        /* 标题 */
+        .article_1 h1{
+            font-size: 30px;
+            font-weight: 700px;
+            color:#333;
+            text-align: center;
+            margin: 15px 0px;
+        }
+        /* 日期 标签 分类 */
+        .jieshaof{
+            position: relative;
+        }
+        .jieshao{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            height: 30px;
+            margin: 0 auto;
+            display: inline-block;
+        }
+        .jieshao span{
+            
+            line-height: 30px;
+        }
+        .riqi{
+            display: inline-block;
+        }
+        .riqi span{
+            font-size: 15px;
+        }
+        .riqi img{
+            vertical-align: middle;
+            width: 20px;
+        }
+        .bc::before{
+            content: '';
+            display: inline-block; 
+            height: 23px;
+            width: 23px;
+            background: url(./图标/编程.png);
+            vertical-align: middle;
+            background-size: contain;
+            margin-right: 2px;
+        }
+        /* 图片 */
+        .tupian img{
+            width: 100%;
+            border-radius: 14px;
+            margin-top: 60px;
+        }
+
+    /* 次文章 */
+        .article_2{
+            width: 100%;
+            height: 230px;
+            background-color: rgb(255, 255, 255,0.8);
+            border-radius: 14px;
+            margin-top: 20px;
+            border: 1px solid #d4d4d5; 
+        }
+        .article_2 img{
+            width: 45%;
+            height: 100%;
+            border-radius: 14px 0px 0px 14px;
+            border: 1px solid #d4d4d5; 
+        }
+        .summary{
+            position: relative;
+            float: right;
+            width: 55%;
+            height: 100%;
+            padding: 40px;
+        }
+        .summary a{
+            font-size: 30px;
+            font-weight: 700px;
+            color:rgb(0,0,0,0.8);
+        }
+        .jjl{
+            height: 30px;
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+        }
+        .jjl span{
+            line-height: 30px;
+            font-size: 22px;
+            margin-right: 5px;
+        }
+        .rq::before {
+            content: '';
+            display: inline-block; 
+            height: 25px;
+            width: 25px;
+            background: url(./图标/日历.png);
+            vertical-align: middle;
+            background-size: contain;
+        }
+        .qt::before {
+            content: '';
+            display: inline-block; 
+            height: 30px;
+            width: 30px;
+            background: url(./图标/学习.png);
+            vertical-align: middle;
+            background-size: contain;
+        }
+        .ly::before{
+            content: '';
+            display: inline-block; 
+            height: 30px;
+            width: 30px;
+            background: url(./图标/旅游.png);
+            vertical-align: middle;
+            background-size: contain;
+        }
+        .msfx::before{
+            content: '';
+            display: inline-block; 
+            height: 30px;
+            width: 30px;
+            background: url(./图标/美食.png);
+            vertical-align: middle;
+            background-size: contain;
+        }
+        .zt::before{
+            content: '';
+            display: inline-block; 
+            height: 30px;
+            width: 30px;
+            background: url(./图标/音乐.png);
+            vertical-align: middle;
+            background-size: contain;
+        }
+        .gq::before{
+            content: '';
+            display: inline-block; 
+            height: 30px;
+            width: 30px;
+            background: url(./图标/钢琴.png);
+            vertical-align: middle;
+            background-size: contain;
+        }

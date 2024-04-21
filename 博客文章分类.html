@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三狗鸭</title>
+    <link rel="icon" type="image/x-icon" href="./图标/狗.ico"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "jingnan";
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            background-image: url(./图片/背景.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+    <!-- 滑动条css -->
+    <link rel="stylesheet" href="./滑动条.css">
+
+    <!-- 导航栏css -->
+    <link rel="stylesheet" href="./导航.css">
+
+    <!-- 字体css -->
+    <link rel="stylesheet" href="./font.css">
+
+    <!-- 分类css -->
+    <link rel="stylesheet" href="./分类.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="daohang">
+        <ul>
+            <li><a href="./博客个人.html" class="geren">个人</a></li>
+            <li>
+                <a class="shejiao">社交</a>
+                <!-- 下拉栏 -->
+                <ul>
+                    <li><a href="./博客留言板.html" class="liuyan">留言板</a></li>
+                    <li><a href="#" class="youren">友人帐</a></li>
+                </ul>
+            </li> 
+            <li><a href="./博客动态.html" class="dongtai">动态</a></li>
+            <li>
+                <a class="wenzhang">文章</a>
+                <!-- 下拉栏 -->
+                <ul>
+                    <li><a href="#" class="guidang">归档</a></li>
+                    <li><a href="./博客文章分类.html" class="fenlei">分类</a></li>
+                    <li><a href="./博客文章标签.html" class="biaoqian">标签</a></li>
+                </ul>
+            </li>
+            <li><a href="./博客首页.html" class="shouye">首页</a></li>
+            <!-- 博客图标 -->
+            <li><img src="./图标/狗狗.png" alt="" width="40px"><p class="mingzi">三狗鸭</p></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="search">
+            <img src="./图标/搜索.png" alt="" width="30px">
+        </div>
+    </div>
+
+    <!-- 主体 -->
+    <div class="flzhuti">
+        <!-- 标题 -->
+        <h1>分类</h1>
+        
+        <!-- 上半栏 -->
+        <div class="shang">
+            <a href="./编程笔记.html" class="bcbj">
+                <div>
+                    <p>编程笔记</p>
+                </div>
+            </a>
+    
+            <a href="./其他学习.html" class="qtxx">
+                <div>
+                    <p>其他学习</p>
+                </div>
+            </a>
+    
+            <a href="./旅游记录.html" class="lyjl">
+                <div>
+                    <p>旅游记录</p>
+                </div>
+                
+            </a>
+        </div>
+
+        <!-- 下半栏 -->
+        <div class="xia">
+            <a href="./美食分享.html" class="msfx">
+                <div>
+                    <p>美食分享</p>
+                </div>
+            </a>
+    
+            <a href="./拾枝杂谈.html" class="szzt">
+                <div>
+                    <p>拾枝杂谈</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+.content1{
+    width: 1430px;
+    height: 100%;
+    margin: 85px auto 20px;
+}
+.lyb{
+    width: 900px;
+    background-color: rgb(255, 255, 255,0);
+    display: inline-block;
+    border-radius: 14px;
+    background-color: rgb(255, 255, 255,0.8);
+}
+.bkliuyan{
+    margin: 0 30px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(182, 182, 182, 0.8);
+}
+
+/* 博主有话说 */
+    .zrjy{
+        margin: 30px 30px 30px;
+        height: 100px;
+    }
+    .zrjy h2{
+        line-height: 40px;
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 14px;
+        color: #1f2d3d;
+        border-bottom: 1px solid rgba(182, 182, 182, 0.8);
+    }
+    .lll h2{
+        margin: 0 30px;
+        line-height: 40px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #1f2d3d;
+    }
+/* 头像 */
+    .tx{
+        float: left;
+        width: 50px;
+        margin-right: 10px;
+    }
+    .tx img{
+        border-radius: 50%;
+        width: 50px;
+    }
+
+/* 内容 */
+    .lybnr{
+        width: 780px;
+    }
+    /* 名称 */
+    .mc{
+        line-height: 30px;
+        font-size: 18px;
+        color: rgb(120, 154, 195);
+        margin-bottom: 15px;
+    }
+    /* 留言 */
+    .lynr{
+        height: 50px;
+    }
+    /* 时间 */
+    .sj{
+        line-height: 20px;
+        font-size: 15px;
+        color: gray;
+        padding-left: 60px;
+    }

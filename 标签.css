@@ -1,0 +1,127 @@
+.bqzhuti{
+    width: 80%;
+    height: 100%;
+    margin: 80px auto 0px;
+    background: rgb(255, 255, 255,0.7);
+    border-radius: 14px;
+    padding: 70px 100px 50px;
+}
+.bqzhuti h1{
+    line-height: 60px;
+    font-size: 60px;
+    font-weight: 1000;
+    color: white;
+    text-shadow: 3px 3px 3px gray;
+    text-align: center;
+    margin-bottom: 65px;
+}
+.bqzhuti div{
+    line-height: 70px;
+}
+.bqzhuti div a{
+    line-height: 70px;
+    font-size: 40px;
+    font-weight: 500;
+    display: inline-block;
+    padding-left: 4px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255,0.5);
+    margin-right: 5PX;
+}
+.shang{
+    margin-left: 50px;
+}
+.xia{
+    margin-top: 10PX;
+    margin-left: 25px;
+}
+/* 标签字体 */
+    .cyy{
+        color: rgb(108, 205, 210);
+    }
+    .ccc{
+        color: rgb(69, 200, 244);
+    }
+    .html{
+        color: rgb(56, 139, 240);
+    }
+    .css{
+        color: rgb(120, 122, 248);
+    }
+    .sjk{
+        color: rgb(213, 136, 103);
+    }
+    .ry{
+        color: rgb(221, 106, 93);
+    }
+    .sy{
+        color: rgb(135, 107, 120);
+    }
+    .ms{
+        color: rgb(145, 196, 154);
+    }
+    .gqp{
+        color: rgb(178, 172, 209);
+    }
+    .jtp{
+        color: rgb(118, 118, 159);
+    }
+    .ys{
+        color: rgb(161, 192, 199);
+    }
+    .yys{
+        color: rgb(145, 194, 180);
+    }
+/* 图标设置 */
+.cssa::before {
+    content: '';
+    display: inline-block; 
+    height: 40px;
+    width: 40px;
+    background: url(./图标/css.png);
+    vertical-align: middle;
+    background-size: contain;
+}
+.gqpa::before {
+    content: '';
+    display: inline-block; 
+    height: 45px;
+    width: 45px;
+    background: url(./图标/钢琴.png);
+    vertical-align: middle;
+    background-size: contain;
+}
+.jtpa::before {
+    content: '';
+    display: inline-block; 
+    height: 45px;
+    width: 45px;
+    background: url(./图标/吉他.png);
+    vertical-align: middle;
+    background-size: contain;
+}
+.ysa::before {
+    content: '';
+    display: inline-block; 
+    height: 44px;
+    width: 44px;
+    background: url(./图标/原神.png);
+    vertical-align: middle;
+    background-size: contain;
+}
+.yysa::before {
+    content: '';
+    display: inline-block; 
+    height: 50px;
+    width: 50px;
+    background: url(./图标/阴阳师.png);
+    vertical-align: middle;
+    background-size: contain;
+}
+/* 点击设置 */
+.bqzhuti div a:hover{
+    border-radius: 10px;
+    background: rgb(120, 154, 195,0.7);
+    color: rgba(255, 255, 255);
+}

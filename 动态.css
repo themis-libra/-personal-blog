@@ -1,0 +1,66 @@
+.content1{
+    width: 1430px;
+    height: 100%;
+    margin: 85px auto 20px;
+}
+.zhongxing{
+    width: 900px;
+    background-color: rgb(255, 255, 255,0);
+    display: inline-block;
+    border-radius: 14px;
+}
+/* 头像、名称、时间 */
+.txmc{
+    width: 820px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+    /* 头像 */
+        .tx{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .txmc img{
+            border-radius: 50%;
+            width: 50px;
+        }
+    /* 名称、时间 */
+        .mcsj{
+            float: right;
+            width: 760px;
+            height: 50px;
+        }
+        .mc{
+            line-height: 30px;
+            font-size: 18px;
+            color: rgb(120, 154, 195);
+        }
+        .sj{
+            line-height: 20px;
+            font-size: 15px;
+            color: gray;
+        }
+
+/* 动态内容 */
+.dtnr{
+    width: 820px;
+    margin-bottom: 8px;
+}
+
+/* 动态框架 */
+.dt1{
+    width: 900px;
+    padding: 40px;
+    border-radius: 14px;
+    background-color: rgb(255, 255, 255,0.8);
+}
+
+.dt2{
+    width: 900px;
+    margin-top: 20px;
+    padding: 40px;
+    border-radius: 14px;
+    background-color: rgb(255, 255, 255,0.8);
+}

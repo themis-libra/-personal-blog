@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三狗鸭</title>
+    <link rel="icon" type="image/x-icon" href="./图标/狗.ico"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "jingnan";
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            background-image: url(./图片/背景.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <!-- 滑动条css -->
+    <link rel="stylesheet" href="./滑动条.css">
+
+    <!-- 导航栏css -->
+    <link rel="stylesheet" href="./导航.css">
+
+    <!-- 字体css -->
+    <link rel="stylesheet" href="./font.css">
+
+    <!-- 首页css -->
+    <link rel="stylesheet" href="./首页.css">
+
+    <!-- 旅游记录css -->
+    <link rel="stylesheet" href="./旅游记录.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="daohang">
+        <ul>
+            <li><a href="./博客个人.html" class="geren">个人</a></li>
+            <li>
+                <a class="shejiao">社交</a>
+                <!-- 下拉栏 -->
+                <ul>
+                    <li><a href="./博客留言板.html" class="liuyan">留言板</a></li>
+                    <li><a href="#" class="youren">友人帐</a></li>
+                </ul>
+            </li> 
+            <li><a href="./博客动态.html" class="dongtai">动态</a></li>
+            <li>
+                <a class="wenzhang">文章</a>
+                <!-- 下拉栏 -->
+                <ul>
+                    <li><a href="#" class="guidang">归档</a></li>
+                    <li><a href="./博客文章分类.html" class="fenlei">分类</a></li>
+                    <li><a href="./博客文章标签.html" class="biaoqian">标签</a></li>
+                </ul>
+            </li>
+            <li><a href="./博客首页.html" class="shouye">首页</a></li>
+            <!-- 博客图标 -->
+            <li><img src="./图标/狗狗.png" alt="" width="40px"><p class="mingzi">三狗鸭</p></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="search">
+            <img src="./图标/搜索.png" alt="" width="30px">
+        </div>
+    </div>
+
+    <!-- 进站图片 -->
+    <div class="kaitou">
+        <div class="lyjl">
+            <p>旅游记录</p>
+        </div>
+    </div>
+
+    <!-- 主体 -->
+    <div class="content1">
+        <!-- 中心栏 -->
+        <div class="zhongxing">
+            <div class="article">
+                <a href="#"><img src="./图片/文章3.jpg" alt=""></a>
+                <div class="summary">
+                    <a href="#">重庆旅游</a>
+                    <div class="jjl">
+                        <!-- 日期 -->
+                        <span class="rq">2022-8-1</span>
+                        <!-- 分类 -->
+                        <span class="ly">旅游记录</span>
+                        <!-- 标签 -->
+                        <span class="sy">📷摄影</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 左边栏 -->
+        <div class="zuo">
+            <img src="./图片/头像.jpg" alt="" width="100%" class="touxiang">
+
+            <p class="xingming">三狗鸭</p>
+
+            <p class="qianming">明知不可而为之</p>
+
+            <div class="zhanghao">
+                <ul>
+                    <li><a href="https://user.qzone.qq.com/1148135712/main" title="QQ"><img src="./图标/QQ.png" alt="" width="30px"></a></li>
+                    <li><a href="#" title="微信"><img src="./图标/微信.png" alt="" width="30px"></a></li>
+                    <li><a href="https://weibo.com/u/5517074141" title="微博"><img src="./图标/微博.png" alt="" width="30px"></a></li>
+                    <li><a href="https://music.163.com/#/user/home?id=408486303" title="网易云音乐"><img src="./图标/网易云音乐.png" alt="" width="30px"></a></li>
+                    <li><a href="https://space.bilibili.com/19414658" title="bilibili"><img src="./图标/bilibili.png" alt="" width="30px"></a></li>
+                </ul>
+            </div>
+
+            <!-- 爱好 -->
+            <div class="aihao">
+                <span>喜欢的动漫</span>
+                <span><img src="./图标/电视机.png" alt="" width="20px"></span>
+                <div class="xiala"><img src="./图标/下拉.png" alt="" width="18px"></div>
+                <div class="aihaoxiangqing">
+                    <p>灵能百分百、鬼灭之刃、咒术回战、异度侵入、地缚少年花子君、罗小黑战记、一人之下、魔法少女小圆、未闻花名、萤火之森、你的名字、哈尔的移动城堡、龙猫、夏目友人帐、时光代理人、夏日重现、黑执事、文豪野犬</p>
+                </div>
+            </div>
+            <div class="aihao">
+                <span>喜欢的游戏</span>
+                <span><img src="./图标/游戏.png" alt="" width="20px"></span>
+                <div class="xiala"><img src="./图标/下拉.png" alt="" width="18px"></div>
+                <div class="aihaoxiangqing">
+                    <p>阴阳师、绝地求生、原神、挖矿</p>
+                </div>
+            </div>
+            <div class="aihao">
+                <span>喜欢的角色</span>
+                <span><img src="./图标/爱心.png" alt="" width="20px"></span>
+                <div class="xiala"><img src="./图标/下拉.png" alt="" width="18px"></div>
+                <div class="aihaoxiangqing">
+                    <p>夏目贵志、袖木普、富冈义勇、时透无一郎、五条悟、七海建人、影山茂夫、无限、冯宝宝、王也、夏尔、太宰治、茨木童子、鹿野院平藏、钟离、赛诺、万叶、魈、达达利亚</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右边栏 -->
+        <div class="you">
+            <!-- 分类 -->
+            <div class="youfenlei">
+                <div>
+                    <p>分类</p>
+                </div>
+                <ul>
+                    <li class="biancheng"><a href="./编程笔记.html">编程笔记</a></li>
+                    <li class="qita"><a href="./其他学习.html">其他学习</a></li>
+                    <li class="lvyou"><a href="./旅游记录.html">旅游记录</a></li>
+                    <li class="meishi"><a href="./美食分享.html">美食分享</a></li>
+                    <li class="zatan"><a href="./拾枝杂谈.html">拾枝杂谈</a></li>
+                </ul>
+            </div>
+
+            <!-- 标签 -->
+            <div class="youbiaoqian">
+                <div class="label">
+                    <p>标签</p>
+                </div>
+                <div class="xiangxibiaoqian">
+                    <a href="./C语言标签.html" class="cyy cyya">📜C语言</a>
+                    <a href="#" class="ccc ccca">📃C++</a>
+                    <a href="#" class="html htmla">📝HTML</a>
+                    <a href="#" class="css cssa">CSS</a>
+                    <a href="#" class="sjk sjka">📁数据库</a>
+                    <a href="./日语标签.html" class="ry rya">🌺日语</a>
+                    <a href="#" class="sy sya">📷摄影</a>
+                    <a href="#" class="gqp gqpa">钢琴谱</a>
+                    <a href="#" class="jtp jtpa">吉他谱</a>
+                    <a href="#" class="ms msa">🍱美食</a>
+                    <a href="#" class="ys ysa">原神</a>
+                    <a href="#" class="yys yysa">阴阳师</a>
+                </div>
+            </div>
+
+            <!-- 归档 -->
+            <div class="youguidang">
+                <div>
+                    <p>归档</p>
+                </div>
+                <ul>
+                    <li class="shiyiyue"><a href="#">2022 十一月</a></li>
+                    <li class="shiyue"><a href="#">2022 十月</a></li>
+                    <li class="jiuyue"><a href="#">2022 九月</a></li>
+                    <li class="bayue"><a href="#">2022 八月</a></li>
+                    <li class="liuyue"><a href="#">2022 六月</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

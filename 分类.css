@@ -1,0 +1,127 @@
+.flzhuti{
+    width: 80%;
+    height: 100%;
+    margin: 80px auto 0px;
+    background: rgb(255, 255, 255,0.7);
+    border-radius: 14px;
+    padding: 70px 40px 40px;
+}
+.flzhuti h1{
+    line-height: 60px;
+    font-size: 60px;
+    font-weight: 1000;
+    color: white;
+    text-shadow: 3px 3px 3px gray;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.shang{
+    width: 975px;
+    margin: 0 auto;
+}
+.xia{
+    width: 638px;
+    margin: 30px auto 0;
+}
+.flzhuti a{
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border-radius: 14px;
+}
+.flzhuti a:hover{
+    box-shadow: 1px 1px 10px 1px gray;
+}
+.flzhuti a div{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%,0);
+    height: 40px;
+}
+.flzhuti a div p{
+    width: 175px;
+    line-height: 40px;
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+}
+
+/* 盒子间距 */
+    .bcbj{
+        margin-right: 30px;
+    }
+    .lyjl{
+        margin-left: 30px;
+    }
+    .msfx{
+        margin-right: 30px;
+    }
+/* 背景图片设置 */
+    .bcbj{
+        background-image: url(./图片/编程笔记.jpg);
+        background-size: 300px;
+    }
+    .qtxx{
+        background-image: url(./图片/其他学习.jpg);
+        background-size: 300px;
+    }
+    .lyjl{
+        background-image: url(./图片/旅游记录.jpg);
+        background-size: 300px;
+    }
+    .msfx{
+        background-image: url(./图片/美食分享.jpg);
+        background-size: 300px;
+    }
+    .szzt{
+        background-image: url(./图片/拾枝杂谈.jpg);
+        background-size: 300px;
+    }
+/* 图标设置 */
+    .bcbj div p::before{
+        content: '';
+        display: inline-block; 
+        height: 40px;
+        width: 40px;
+        background: url(./图标/编程.png);
+        vertical-align: middle;
+        background-size: contain;
+    }
+    .qtxx div p::before{
+        content: '';
+        display: inline-block; 
+        height: 40px;
+        width: 40px;
+        background: url(./图标/学习.png);
+        vertical-align: middle;
+        background-size: contain;
+    }
+    .lyjl div p::before{
+        content: '';
+        display: inline-block; 
+        height: 40px;
+        width: 40px;
+        background: url(./图标/旅游.png);
+        vertical-align: middle;
+        background-size: contain;
+    }
+    .msfx div p::before{
+        content: '';
+        display: inline-block; 
+        height: 40px;
+        width: 40px;
+        background: url(./图标/美食.png);
+        vertical-align: middle;
+        background-size: contain;
+    }
+    .szzt div p::before{
+        content: '';
+        display: inline-block; 
+        height: 40px;
+        width: 40px;
+        background: url(./图标/音乐.png);
+        vertical-align: middle;
+        background-size: contain;
+    }
